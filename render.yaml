@@ -15,6 +15,7 @@ services:
         fromDatabase:
           name: postgres
           property: connectionString
+    plan: free
   # - type: redis
     # name: redis
     # ipAllowList: []
