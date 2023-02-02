@@ -1,0 +1,42 @@
+.future-events{
+    min-height: 40vh;
+}
+
+.past-events{
+    min-height: 40vh;
+}
+
+.pending-button {
+  background-color: #ffeb99;
+  color: black;
+}
+
+.confirmed-button {
+  background-color: #d4ebd0;
+  color: black;
+}
+
+.declined-button{
+  background-color: #CF2466;
+  color: white !important;
+}
+
+.cancelled-button{
+  background-color: #A9A9A9;
+  color: black;
+}
+
+.nav-pills .nav-link.active{
+  background-color: transparent !important;
+  color: $primary-dark-charcoal !important;
+  border-color: #EBEBEB !important;
+  border-bottom: 2px solid;
+}
+
+.nav-pills .nav-link{
+  color: $tertiary-spanish-gray !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+}
+

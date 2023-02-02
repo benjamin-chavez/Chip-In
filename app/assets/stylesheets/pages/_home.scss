@@ -1,0 +1,77 @@
+// Specific CSS for your home-page
+.banner{
+    background-image: linear-gradient(-225deg, rgba(133, 108, 139, 0.5), rgba(133, 108, 139, 0.5)), url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+    min-height: 550px;
+    color: black;
+    text-align: center;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 90px;
+}
+
+.banner p {
+    color: white;
+    opacity: 0.8;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.homepage-search {
+    display: inline;
+
+}
+
+.form-control {
+  display: inline-flex;
+}
+
+.mission-content-center{
+  align-items: center;
+}
+
+#search_query {
+  width: 50%;
+
+}
+#section-two {
+    background-image: linear-gradient(-225deg, rgba(133, 108, 139, 0.5), rgba(133, 108, 139, 0.5)), url('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583920050/pexels-photo-697243_pn7wbg.jpg');
+    color: white;
+}
+
+#section-one{
+  color: $secondary-granite-gray;
+}
+
+#section-one p{
+
+  color: $tertiary-spanish-gray;
+}
+
+#host-icons {
+  color: $secondary-granite-gray;
+}
+
+#first-header{
+
+ color: $primary-dark-charcoal;
+
+}
+
+#second-header{
+  color: white;
+
+}

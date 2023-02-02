@@ -1,0 +1,23 @@
+.modal-body {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin: 10px;
+  .fa-calendar-times{
+    color: $tertiary-spanish-gray;
+  }
+}
+
+.modal-reviews{
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15x;
+  margin: 10px;
+}
+
+.review {
+  padding: 5px;
+}
+
+#modal-photo {
+  width: 40%;
+}
+
