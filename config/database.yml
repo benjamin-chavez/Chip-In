@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: CHIP_IN_production
-  username: CHIP_IN
+  url: <%= ENV['DATABASE_URL'] %>
+  database: chip_in_production
+  username: chip_in
   password: <%= ENV['CHIP_IN_DATABASE_PASSWORD'] %>
