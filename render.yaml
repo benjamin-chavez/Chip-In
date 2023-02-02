@@ -1,5 +1,5 @@
 databases:
-  - name: postgres
+  - name: Chip-In - PG Database
     ipAllowList: []
 
 services:
