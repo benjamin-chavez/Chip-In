@@ -4,9 +4,9 @@ class Event < ApplicationRecord
   has_many :requests
   has_many :users, through: :requests
   has_one_attached :photo
-  validates :photo, attached: true
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?
+  # validates :photo, attached: true
 
   def starts_at_formatted
     starts_at.strftime('%a, %d %b %k:%M ')
