@@ -5,9 +5,13 @@ puts 'Creating events...'
 # EVENT 1
 charity1 = User.find_by(username: 'Youngcaritas Berlin')
 event1 = Event.create!({
-  name: 'Forest Cleanup',
+  name: 'Fash(ion) Fresh // Clothing Swap Event',
   address: charity1.address,
-  description: 'We will be cleaning up the forsest!',
+  description: "Clothes swap, talk about the circular textile economy, hands-on workshops, music & drinks. Join us for our Christmassy clothing swap event on Wednesday 30th November.
+
+  Your closet is literally bursting at the seams, but you're longing for something new?
+
+  Then you shouldn't miss our winter swap party. Because on Wednesday, November 30th from 6 p.m. we want to declare war on \"Fast Fashion\" together with you, exchange ideas about the circular textile economy and the sustainable fashion industry and simply let your soul dangle with cool & warm drinks and relaxed beats.",
   starts_at: Date.parse('Jan 1, 2050 12:00:00'),
   ends_at: Date.parse('Jan 1, 2050 15:00:00'),
   capacity: 50,
@@ -18,7 +22,8 @@ event1 = Event.create!({
   latitude: 52.5462838485382,
   longitude: 13.41435236957723,
 })
-event1_photo = open('public/images/event1_img.jpg')
+event1_photo = open('public/images/event1_img1.jpg')
+# event1_photo = open('public/images/event1_img2.jpg')
 event1.photo.attach(io:event1_photo, filename:'logo1.jpg', content_type: 'image/jpg')
 
 # EVENT 2
