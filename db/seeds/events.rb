@@ -19,8 +19,8 @@ event1 = Event.create!({
   user_id: charity1.id,
   created_at: Time.now,
   updated_at: Time.now,
-  latitude: 52.5462838485382,
-  longitude: 13.41435236957723,
+  latitude: 52.545924818280874,
+  longitude: 13.417454780392955,
 })
 event1_photo = open('public/images/event1_img1.jpg')
 # event1_photo = open('public/images/event1_img2.jpg')
@@ -29,12 +29,12 @@ event1.photo.attach(io:event1_photo, filename:'logo1.jpg', content_type: 'image/
 # EVENT 2
 charity2 = User.find_by(username: 'Serve the City')
 event2 = Event.create!({
-  name: 'Serve The City Forest Cleanup',
+  name: "Action Day #{Time.zone.now.year}",
   address: charity2.address,
-  description: 'We will be cleaning up the forsest!',
+  description: "There will be different projects. Each project has a project leader. All of us will meet in one place and start together. From there we will spread out into the different projects in the city. As soon as we know the concrete projects they will be put online.",
   starts_at: Date.parse('Jan 1, 2050 12:00:00'),
   ends_at: Date.parse('Jan 1, 2050 15:00:00'),
-  capacity: 50,
+  capacity: 75,
   category: 'Environment',
   user_id: charity2.id,
   created_at: Time.now,
@@ -42,7 +42,7 @@ event2 = Event.create!({
   latitude: 52.5462838485382,
   longitude: 13.41435236957723,
 })
-event2_photo = open('public/images/serve_the_city_img1.jpg')
+event2_photo = open('public/images/event2_img1.jpg')
 event2.photo.attach(io:event2_photo, filename:'logo1.jpg', content_type: 'image/jpg')
 
 # EVENT 3
@@ -61,7 +61,8 @@ event3 = Event.create!({
   latitude: 52.5462838485382,
   longitude: 13.41435236957723,
 })
-event3_photo = open('public/images/serve_the_city_img1.jpg')
+event3_photo = open('public/images/event2_img2.jpg')
+# https://refugeworldwide.com/news/berliner-obdachlosenhilfe
 event3.photo.attach(io:event3_photo, filename:'logo1.jpg', content_type: 'image/jpg')
 
 

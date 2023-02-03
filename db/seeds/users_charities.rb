@@ -9,7 +9,7 @@ youngcaritas = User.create(
   username:"Youngcaritas Berlin",
   password: "123456",
   email:"youngcaritas@caritas-berlin.de",
-  address: "Residenzstraße 90 13409 Berlin",
+  address: "Pappelallee 62, 10437 Berlin, Germany",
   bio:"Youngcaritas Berlin is part of the Caritas Association for the Archdiocese of Berlin and promotes young commitment. Our aim is to introduce young people to politically and socially controversial issues and to make them more aware of environmental resources through both theoretical input and practical implementation. The aim of youngcaritas Berlin is to attract as many young people as possible to volunteer, be it for the youngcaritas projects Kulturbuddys, vergissmeinnicht* or through advice and placement in various institutions and projects.",
   full_name: "Adele Weber",
   role: "Charity",
@@ -21,7 +21,7 @@ youngcaritas.photo.attach(io:charity1_img, filename:'logo.jpg', content_type: 'i
 
 
 #charity 2
-servethecitiy = User.create(
+servethecity = User.create(
   username:"Serve the City",
   password: "123456",
   email:"christine@servethecity.berlin",
@@ -33,7 +33,8 @@ servethecitiy = User.create(
 )
 # file2 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/servethecity_t7mhhs.jpg')
 charity2_img = open('public/images/charity2_img.jpg')
-servethecitiy.photo.attach(io:charity2_img, filename:'logo1.jpg', content_type: 'image/jpg')
+# charity2_img = open('public/images/event2_img1.jpg')
+servethecity.photo.attach(io:charity2_img, filename:'logo1.jpg', content_type: 'image/jpg')
 
 
 # charity 3
