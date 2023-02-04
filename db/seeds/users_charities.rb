@@ -1,7 +1,7 @@
 require "open-uri"
 
-# puts 'Destroying all charities.. '
-# User.where(role: 'Charity').destroy_all
+puts 'Destroying all charities.. '
+User.where(role: 'Charity').destroy_all
 
 puts 'Creating charities...'
 # charity 1
@@ -72,14 +72,34 @@ familienzentrum.photo.attach(io:charity4_img, filename:'charity4_img.png', conte
 
 #charity 5
 junkfood = User.create(
-  username:"Junk Food Project",
+  username: 'The Real Junk Food Project: Berlin',
   password: "123456",
   email:"realjunkfoodberlin@yahoo.com",
   address: "Bezirk Mitte, 13359 Berlin",
-  bio:"We want to help to reduce food waste by turning surplus fruit and veg into delicious delicatessen and healthy meals that are provided to the public and other social projects and events (usually connected with sustainability and/or social issues). We bring people together and share the joy of cooking and eating together while serving a great cause of preventing food waste.",
+  bio:"<p>
+        The Real Junk Food Project Berlin is a collaborative effort to bring about a
+        radical change in our food system. Founded by Tobias Goecke in June 2015, we
+        are part of The Real Junk Food Project global network initiated in the UK.
+      </p>
+
+      <p>
+        Our vision is to raise awareness of the huge amount of food that is wasted
+        because food has to look beautiful to be consumable in the modern world we
+        live in.
+      </p>
+
+      <p>We want to change this perception.</p>
+
+      <p>
+        Our strategy is to make meals that look as beautiful and mouth-watering as
+        those in fine-dining restaurants and to appreciate the true beauty of food
+        regardless of their appearance or age. We understand that a perfect meal is
+        not only nutritionally balanced and good tasting but is also visually
+        pleasing.
+      </p>",
   full_name: "Heidy Lange",
   role: "Charity",
-  webpage: "https://www.facebook.com/TRJFPBerlin"
+  webpage: "https://realjunkfoodberlin.wordpress.com/about/"
 )
 # file5 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321091/CHIP-IN/Charities%20pics/junk_food_proyect_wstadt.jpg')
 charity5_img = open('public/images/charity5_img.jpg')
