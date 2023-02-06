@@ -29,7 +29,7 @@
           <% if @event.requests.present? %>
             <div class="d-flex align-items-center justify-content-start mb-3">
               <% @event.requests.sample(2).each do |request|%>
-                <%= cl_image_tag request.user.photo.key, class: "avatar", id: "avatar-participant", title: request.user.username%>
+                <%= cl_image_tag request.user.photo.key, class: "avatar", id: "avatar-participant", title: request.user.username, width: 40, height: 40, crop: :thumb, gravity: :face%>
               <% end %>
               <% if @event.requests.length > 2 %>
                 <div class="ml-2">

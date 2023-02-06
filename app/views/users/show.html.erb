@@ -11,15 +11,14 @@
           </div>
           <div class="">
             <div class="row d-flex justify-content-center">
-            <%= link_to "Website", @user.webpage , target: "_blank", rel: "nofollow", class: "link-profile btn btn-light mb-2"  %>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <%= mail_to @user.email, "Contact", class: "link-profile btn btn-light mb-3" %>
-          </div>
+              <%= link_to "Website", @user.webpage , target: "_blank", rel: "nofollow", class: "link-profile btn btn-light mb-2"  %>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <%= mail_to @user.email, "Contact", class: "link-profile btn btn-light mb-3" %>
+            </div>
           </div>
         </div>
       </div>
-
       <div class="col-lg-8 col-sm-12">
         <div class="second-half">
           <div class="user-details">
@@ -43,7 +42,7 @@
             <% @user.reviews_as_reviewee.each do |review| %>
               <div class="review-box">
                 <% review.rating.times do %>
-                    <i class="fas fa-star" style="color: #fbd94c"></i>
+                  <i class="fas fa-star" style="color: #fbd94c"></i>
                 <% end %>
                 <% (5 - review.rating).times do %>
                   <i class="far fa-star" style="color: #fbd94c"></i>
@@ -58,4 +57,3 @@
     </div>
   </div>
 </div>
-

@@ -29,8 +29,7 @@
       <div class="col-lg-3 col-md-6 col-sm-12 mission-card">
         <div class="d-flex flex-column text-center mission-content-center">
           <%# <%= cl_image_tag("https://res.cloudinary.com/dqlvehu5z/image/upload/v1583858272/phone_hc2rp2.jpg", crop: :fill) %>
-          <%= cl_image_tag("https://res.cloudinary.com/dqlvehu5z/image/upload/v1583858272/phone_hc2rp2.jpg",
-              crop: :fill,  class: "img-fluid") %>
+          <%= cl_image_tag("https://res.cloudinary.com/dqlvehu5z/image/upload/v1583858272/phone_hc2rp2.jpg", crop: :fill,  class: "img-fluid") %>
           <div class="mission-text">
             <h4>Send your request online</h4>
             <p>Whether at home or on the go, you contact charities directly.</p>
@@ -79,7 +78,8 @@
                             <div class="spots-left-circle d-flex align-items-center justify-content-center text-dark m-2">
                               <%= event.capacity - event.requests.length %>
                             </div>
-                            spots left</div>
+                            spots left
+                          </div>
                         </p>
                       </div>
                     </div>
