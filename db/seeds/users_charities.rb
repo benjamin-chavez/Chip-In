@@ -254,7 +254,7 @@ stepsforpeace = User.create(
   bio:"Steps for Peace  is a nonprofit organisation based in Berlin that supports social and political transformation processes in fragile contexts. Our work focuses on education, research and development cooperation.",
   full_name: "Gotlinde Pfeiffer",
   role: "Charity",
-  webpage: "http://www.steps-for-peace.org/en/"
+  webpage: "http://www.steps-for-peace.org"
   )
 # file15 = URI.open('https://res.cloudinary.com/dqlvehu5z/image/upload/v1583321092/CHIP-IN/Charities%20pics/stepsforpeace_i0tzzh.png')
 charity15_img = open('public/images/charity15_img.png')
