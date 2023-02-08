@@ -18,5 +18,3 @@
 ```cmd
  $ rails s
 ```
-
-bundle exec rake db:drop db:create db:migrate DISABLE_DATABASE_ENVIRONMENT_CHECK=1
